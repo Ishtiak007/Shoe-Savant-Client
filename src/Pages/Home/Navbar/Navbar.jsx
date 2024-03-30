@@ -8,9 +8,9 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/menu'>Our Menu</Link></li>
-        <li><Link className='font-semibold text-white' to='/allItems/homeMenuOverview'>All Items</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Contact Us</Link></li>
+        <li><Link className='font-semibold text-white' to='/'>Colledtion</Link></li>
+        <li><Link className='font-semibold text-white' to='/'>Cart</Link></li>
+        <li><Link className='font-semibold text-white' to='/'>Checkout</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to='/'><h1>Shoe-Savant</h1></Link>
+                <Link to='/'><h1 className="font-bold text-xl">Shoe <span className="text-red-700">Savant</span></h1></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
