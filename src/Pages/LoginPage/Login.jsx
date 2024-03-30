@@ -69,7 +69,6 @@ const Login = () => {
                             </div>
                             <div className="divider">or,</div>
                             <SocialLogin></SocialLogin>
-
                         </form>
                     </div>
                 </div>

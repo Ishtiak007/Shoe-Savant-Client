@@ -30,7 +30,7 @@ const SocialLogin = () => {
     }
     return (
         <div className="space-y-3">
-            <button onClick={handleGoogleLogIn} className="flex items-center gap-3 w-3/4 rounded-3xl p-2 outline outline-1 outline-slate-800 mx-auto"><img src={googleLogo} className="w-6" alt="" /> Continue With Google</button>
+            <button onClick={handleGoogleLogIn} className="flex items-center justify-center gap-3 w-3/4 rounded-3xl p-2 outline outline-1 outline-slate-800 mx-auto"><img src={googleLogo} className="w-6 " alt="" />Google Login</button>
         </div>
     );
 };
