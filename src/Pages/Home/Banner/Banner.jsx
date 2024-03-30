@@ -13,11 +13,10 @@ const Banner = () => {
                 </h1>
                 <div className="md:col-span-2 ">
                     <p className="font-poppins text-[12px] md:text-sm text-gray-400 mb-4 w-[70%]">
-                        Explore our curated collection of the latest trends in footwear.
-                        Find the perfect pair that suits your style and comfort
+                        Delve into our carefully selected assortment of the newest footwear trends. Discover the ideal pair that matches your unique style and ensures your comfort.
                     </p>
                     <Button className="px-4 py-1 text-white font-poppins">
-                        Find Your Style
+                        Find Your Perfect Pair
                     </Button>
                 </div>
             </div>
@@ -26,18 +25,18 @@ const Banner = () => {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-2 h-[400px] mt-10 mb-10">
                 <div className="banner bg-banner1 relative md:col-span-3 overflow-hidden hover:bg-[160%] duration-[.6s] ">
                     <h2 className="absolute left-[10%] bottom-[20%] text-white font-clashSemibold text-2xl">
-                        Iconic Style, Exceptional Comfort.
+                        Classic Sophistication, Unmatched Comfort
                     </h2>
                 </div>
                 <div className="grid gap-2 grid-row-2 md:col-span-2">
                     <div className="bg-banner3 relative hover:bg-[160%] duration-[.6s] ">
                         <h2 className="absolute left-[10%] bottom-[20%] text-white font-clashSemibold text-xl">
-                            Casual Comfort, Effortless Style.
+                            Relaxed Ease, Seamless Fashion.
                         </h2>
                     </div>
                     <div className="bg-banner2 relative hover:bg-[160%] duration-[.6s] ">
                         <h2 className="absolute left-[10%] bottom-[20%] text-white font-clashSemibold text-xl">
-                            Run Beyond Limits
+                            Push Past Boundaries with Your Run.
                         </h2>
                     </div>
                 </div>
