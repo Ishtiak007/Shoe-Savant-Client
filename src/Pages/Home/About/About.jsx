@@ -1,6 +1,6 @@
 
 
-const AboutParallax = () => {
+const About = () => {
     return (
         <div className="min-h-[500px] h-[80vh] w-full bg-about bg-fixed flex  justify-center items-center">
             <div className="flex flex-col  items-center justify-center text-white w-[70%] gap-4">
@@ -24,4 +24,4 @@ const AboutParallax = () => {
     );
 };
 
-export default AboutParallax;
+export default About;

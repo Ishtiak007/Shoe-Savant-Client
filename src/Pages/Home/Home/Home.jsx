@@ -1,7 +1,8 @@
-import AboutParallax from "../AboutParallax/AboutParallax";
+import About from "../About/About";
 import Banner from "../Banner/Banner";
 import BrandCarousel from "../BrandCarousel/BrandCarousel";
 import ShoeBrands from "../ShoeBrands/ShoeBrands";
+import Subscribtion from "../Subscribtion/Subscribtion";
 import Testimonial from "../Testimonial/Testimonial";
 
 
@@ -11,8 +12,9 @@ const Home = () => {
             <Banner></Banner>
             <ShoeBrands></ShoeBrands>
             <BrandCarousel></BrandCarousel>
-            <AboutParallax></AboutParallax>
+            <About></About>
             <Testimonial></Testimonial>
+            <Subscribtion></Subscribtion>
         </div>
     );
 };
