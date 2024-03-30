@@ -15,12 +15,9 @@ const Navbar = () => {
         <li><Link className='font-semibold text-white' to='/'>Cart</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Checkout</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Dashboard</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Login</Link></li>
+        <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
 
     </>
-
-
-
     const handleLogOut = () => {
         logOut()
             .then(() => {
