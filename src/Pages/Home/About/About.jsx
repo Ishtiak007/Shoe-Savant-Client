@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import Button from "../../../Shared/Html/Button";
 
 
 const About = () => {
@@ -19,6 +21,7 @@ const About = () => {
                     your stride—discover exceptional footwear that resonates with your
                     individuality.
                 </p>
+                <Link to='/register'><Button className={'p-3 text-white text-center my-5'}>Resister Now For</Button></Link>
             </div>
         </div>
     );

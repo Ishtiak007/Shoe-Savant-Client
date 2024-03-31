@@ -8,6 +8,7 @@ const TestimonialCard = ({ testimonial }) => {
                     <div className="pr-4 border-r border-r-gray-500">
                         <p className="text-lg font-bold"> {testimonial.authorName}</p>
                         <p className="text-[12px]">{testimonial.authorPosition}</p>
+                        <p className="text-[12px]">{testimonial.authorCompany}</p>
                     </div>
                     <p className=" font-clashSemibold">{testimonial.brand}</p>
                 </div>
@@ -23,7 +24,7 @@ const TestimonialCard = ({ testimonial }) => {
                 <img
                     src={testimonial.imageUrl}
                     alt=""
-                    className="object-cover h-full border-[5px] border-gray-400 rounded-md"
+                    className="object-cover h-full border-[3px] border-base-400 rounded-md"
                 />
             </div>
         </div>

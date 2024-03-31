@@ -6,6 +6,7 @@ import useAuth from "../../Components/Hooks/useAuth";
 import CoverImage from "../../Shared/CoverImage/CoverImage";
 import Button from "../../Shared/Html/Button";
 import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
+import image1 from '../../assets/monaal-garg-99NxpMVxWDA-unsplash.jpg'
 
 
 const Register = () => {
@@ -48,7 +49,7 @@ const Register = () => {
     }
     return (
         <div>
-            <CoverImage title={'Register from here'} description={'Welcome to Shoe-Savant World'}></CoverImage>
+            <CoverImage img={image1} title={'Register from here'} description={'Welcome to Shoe-Savant World'}></CoverImage>
             <div className="h-[100vh] flex justify-center items-center">
                 <div className="hero min-h-screen">
                     <div className="hero-content flex-col">
