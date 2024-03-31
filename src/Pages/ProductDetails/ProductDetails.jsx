@@ -2,28 +2,24 @@ import { Rating } from "@mui/material";
 import Container from "../../Shared/Container/Container";
 import DetailImgCarousal from "./DetailImgCarousal";
 import { useLoaderData } from "react-router-dom";
+import Button from "../../Shared/Html/Button";
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
-    const { _id,
+    const {
         name,
         brand,
         gender,
         price,
-        available,
         description,
-        shippingPrice,
-        sizes,
         images,
         discount,
-        buyingCost,
         profitPercentage,
-        sellPrice,
-        addedDate } = productDetails;
+    } = productDetails;
     return (
         <div>
             <div className="min-h-screen font-poppins">
-                <div className="h-[250px] bg-yellow-300 bg-detail flex justify-center items-center bg-fixed">
+                <div className="h-[450px] bg-yellow-300 bg-detail flex justify-center items-center bg-fixed">
                     <h3 className="text-gray-400 font-clashBold text-xl md:text-2xl lg:text-3xl text-center">
                         Unveiling [{name}]:
                         <br /> {description}
@@ -48,7 +44,21 @@ const ProductDetails = () => {
                                 readOnly
                             />
                         </div>
-                        <p className="text-sm mt-10 text-gray-600">{description}</p>
+                        <div className="flex justify-between gap-3">
+                            <p className="text-sm mt-10 text-gray-600 font-bold">Gender : {gender}</p>
+                            <p className="text-sm mt-10 text-gray-600 font-bold">Discount : {discount}%</p>
+                            <p className="text-sm mt-10 text-gray-600 font-bold">Profit Percentage : {profitPercentage}%</p>
+                        </div>
+                        <div className="flex flex-col gap-2 mt-10">
+                            <Button className="py-2 text-white">
+                                Add To Cart
+                            </Button>
+                            <Button
+                                className="py-2 text-black bg-white border border-black"
+                            >
+                                Save To Wishlist
+                            </Button>
+                        </div>
                     </div>
                 </Container>
 

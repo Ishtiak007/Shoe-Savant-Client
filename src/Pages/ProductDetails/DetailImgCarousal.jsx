@@ -1,10 +1,23 @@
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
-const DetailImgCarousal = () => {
+const DetailImgCarousal = ({ images }) => {
     return (
-        <div>
-
-        </div>
+        <Carousel
+            className="flex flex-col justify-center items-center md:justify-normal md:items-start"
+            autoPlay={true}
+            showIndicators={false}
+            stopOnHover={true}
+            swipeable={true}
+            width={"90%"}
+            infiniteLoop={true}
+        >
+            {images?.map((image) => (
+                <div key={image} className="text-center">
+                    <img src={image} alt="" className="object-cover" />
+                </div>
+            ))}
+        </Carousel>
     );
 };
 
