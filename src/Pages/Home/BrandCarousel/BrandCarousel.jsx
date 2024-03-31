@@ -55,6 +55,7 @@ const BrandCarousel = () => {
         <div>
             <h1 className="text-center font-bold lg:text-3xl text-lg my-10">Explore Brands</h1>
             <Container>
+
                 <Swiper
                     // slidesPerView={"auto"}
                     spaceBetween={10}
