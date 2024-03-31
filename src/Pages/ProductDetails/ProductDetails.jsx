@@ -1,12 +1,22 @@
 import { Rating } from "@mui/material";
 import Container from "../../Shared/Container/Container";
 import DetailImgCarousal from "./DetailImgCarousal";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import Button from "../../Shared/Html/Button";
+import useAxiosPublic from "../../Components/Hooks/useAxiosPublic";
+import useAuth from "../../Components/Hooks/useAuth";
+import useCarts from "../../Components/Hooks/useCarts";
+import Swal from "sweetalert2";
 
 const ProductDetails = () => {
     const productDetails = useLoaderData();
+    const { user } = useAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const axiosPublic = useAxiosPublic();
+    const [, refetch] = useCarts();
     const {
+        _id,
         name,
         brand,
         gender,
@@ -16,6 +26,50 @@ const ProductDetails = () => {
         discount,
         profitPercentage,
     } = productDetails;
+
+
+    const handleAddToCart = () => {
+        if (user && user.email) {
+
+            const cartItem = {
+                productId: _id,
+                email: user.email,
+                brand,
+                price,
+                images,
+                discount,
+            }
+            axiosPublic.post('/carts', cartItem)
+                .then(res => {
+                    console.log(res.data)
+                    if (res.data.insertedId) {
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: `${name} added to your cart`,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        refetch();
+                    }
+                })
+        }
+        else {
+            Swal.fire({
+                title: "You are not login",
+                text: "Please Log In first to Add to Cart",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes,Login"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/login', { state: { from: location } })
+                }
+            });
+        }
+    }
     return (
         <div>
             <div className="min-h-screen font-poppins">
@@ -50,7 +104,7 @@ const ProductDetails = () => {
                             <p className="text-sm mt-10 text-gray-600 font-bold">Profit Percentage : {profitPercentage}%</p>
                         </div>
                         <div className="flex flex-col gap-2 mt-10">
-                            <Button className="py-2 text-white">
+                            <Button onClick={handleAddToCart} className="py-2 text-white">
                                 Add To Cart
                             </Button>
                             <Button
