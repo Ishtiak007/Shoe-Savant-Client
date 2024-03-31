@@ -8,7 +8,7 @@ const ProductOverviewCard = ({ product }) => {
 
     const navigate = useNavigate();
 
-    const { images, name, _id } = product;
+    const { images, name, _id, brand } = product;
     const [hover, setHover] = useState(false);
 
     return (
@@ -27,8 +27,8 @@ const ProductOverviewCard = ({ product }) => {
                 className={`h-[90%] relative mx-auto  duration-[.4s] ${hover ? "scale-105" : ""
                     }`}
             ></div>
-            <div className=" h-[50px] bg-[rgb(234 234 234)] w-full  font-bold text-center">
-                {name}
+            <div className=" h-[50px] bg-[rgb(234 234 234)] w-full  font-bold text-center flex justify-evenly">
+                <p>Name : {name}</p>  <p>Brand: {brand}</p>
             </div>
             {/* show on hover */}
             <div
