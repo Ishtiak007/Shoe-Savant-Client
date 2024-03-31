@@ -20,6 +20,7 @@ const ProductOverview = () => {
                     pagination={{
                         clickable: true,
                     }}
+                    grabCursor={true}
                     modules={[Pagination]}
                     className="mySwiper"
                     style={{

@@ -20,8 +20,8 @@ const ProductDetails = () => {
         <div>
             <div className="min-h-screen font-poppins">
                 <div className="h-[450px] bg-yellow-300 bg-detail flex justify-center items-center bg-fixed">
-                    <h3 className="text-gray-400 font-clashBold text-xl md:text-2xl lg:text-3xl text-center">
-                        Unveiling [{name}]:
+                    <h3 className="text-gray-400 font-bold text-xl md:text-2xl lg:text-3xl text-center">
+                        Details of  - {name}
                         <br /> {description}
                     </h3>
                 </div>
