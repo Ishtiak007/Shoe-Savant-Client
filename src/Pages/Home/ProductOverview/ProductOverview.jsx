@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,9 +13,9 @@ const ProductOverview = () => {
     return (
         <div>
             <Container className="my-28">
-                <h1 className="my-5 font-bold text-black lg:text-3xl text-xl text-center">Choose your favorite pair</h1>
+                <h1 className="my-5 font-bold text-black lg:text-3xl textxl text-center">Choose your favorite pair</h1>
                 <Swiper
-                    slidesPerView={"auto"}
+                    // slidesPerView={"auto"}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
@@ -38,7 +37,6 @@ const ProductOverview = () => {
                         },
                     }}
                 >
-                    {/* <SwiperSlide className="h-[100px]">Slide 1</SwiperSlide> */}
 
                     {products?.map((product) => (
                         <SwiperSlide key={product?._id} className="h-[100px]">
