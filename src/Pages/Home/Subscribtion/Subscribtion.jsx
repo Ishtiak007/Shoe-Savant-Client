@@ -6,28 +6,26 @@ const Subscribtion = () => {
     return (
         <div
             className="bg-[#151515] min-h-[400px] lg:min-h-[500px] h-[60vh]  text-white font-poppins flex items-center bg-subscribe"
-        //   style={{ backgroundColor: "red" }}
         >
             <Container className="flex flex-col items-center justify-center gap-2 md:block">
                 <h1 className="mb-4 text-xl sm:text-2xl lg:text-3xl w-[80%] md:w-[40%] font-bold text-center md:text-left">
-                    Stay Updated with Exclusive Offers
+                    Keep Informed with Special Deals.
                 </h1>
                 <p className="text-[12px] text-center md:text-left text-gray-400">
-                    Subscribe to our newsletter and be the first to know about our latest
-                    news and special deals
+                    Sign up for our newsletter and stay ahead with our newest updates and exclusive offers.
                 </p>
                 <div className="flex items-center justify-center w-full gap-1 md:justify-start">
                     <input
                         type="text"
-                        className="focus:outline-none  py-2 pl-3 w-[60%] sm:w-[80%] md:w-[40%] my-2  text-black text-sm"
+                        className="focus:outline-none  py-2 pl-3 w-[60%] sm:w-[80%] md:w-[40%] my-2  text-black text-sm rounded-l-md"
                         placeholder="Your Email Address "
                     />
-                    <Button className="px-3 py-2 text-sm text-white bg-black">
-                        Join NOW
+                    <Button className="px-3 py-2 text-sm text-white bg-black rounded-r-md">
+                        Join With Us
                     </Button>
                 </div>
                 <p className="text-[12px] text-center md:text-left text-gray-400">
-                    By joining, you agree to our terms and conditions
+                    By becoming a member, you consent to abide by our terms and conditions.
                 </p>
             </Container>
         </div>

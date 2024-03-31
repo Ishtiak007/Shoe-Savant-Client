@@ -7,21 +7,15 @@ const About = () => {
         <div className="min-h-[500px] h-[80vh] w-full bg-about bg-fixed flex  justify-center items-center">
             <div className="flex flex-col  items-center justify-center text-white w-[70%] gap-4">
                 <h3 className="text-sm text-center md:text-medium font-clashSemibold">
-                    Your Journey in Style Begins Here
+                    Embark on Your Stylish Journey Here.
                 </h3>
-                <h1 className="text-2xl text-center md:text-3xl lg:text-5xl font-clashBold">
-                    Discover the World <br />
-                    of Exceptional Footwear
+                <h1 className="text-2xl text-center md:text-3xl lg:text-5xl font-bold">
+                    Experience the <br /> Excellence of Footwear.
                 </h1>
                 <p className="text-[10px] md:text-sm text-center w-full md:w-[80%] text-gray-200">
-                    Embark on a stylish journey with our curated footwear collection. From
-                    timeless classics to cutting-edge designs, we celebrate diversity in
-                    every step. Explore a world where craftsmanship meets innovation,
-                    where every pair tells a unique story. Elevate your style, elevate
-                    your stride—discover exceptional footwear that resonates with your
-                    individuality.
+                    Begin a fashionable journey with our handpicked footwear selection. From enduring classics to pioneering styles, we embrace variety with each stride. Navigate a realm where tradition merges with creativity, where each pair narrates its distinctive tale. Enhance your look, enhance your walk—explore extraordinary footwear that mirrors your uniqueness.
                 </p>
-                <Link to='/register'><Button className={'p-3 text-white text-center my-5'}>Resister Now For</Button></Link>
+                <Link to='/register'><Button className={'p-3 text-white text-center my-5 font-bold'}>Resister Now</Button></Link>
             </div>
         </div>
     );
