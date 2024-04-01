@@ -12,7 +12,6 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Collection</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Checkout</Link></li>
         <li><Link className='font-semibold text-white' to='/dashboard/cart'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>

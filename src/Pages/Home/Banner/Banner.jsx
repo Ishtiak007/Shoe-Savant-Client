@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../../Shared/Container/Container";
 import Button from "../../../Shared/Html/Button";
 
@@ -15,9 +16,11 @@ const Banner = () => {
                     <p className="font-poppins text-[12px] md:text-sm text-gray-400 mb-4 w-[70%]">
                         Delve into our carefully selected assortment of the newest footwear trends. Discover the ideal pair that matches your unique style and ensures your comfort.
                     </p>
-                    <Button className="px-4 py-1 text-white font-poppins">
-                        Find Your Perfect Pair
-                    </Button>
+                    <Link to='/register'>
+                        <Button className="px-4 py-1 text-white font-poppins">
+                            Find Your Perfect Pair
+                        </Button>
+                    </Link>
                 </div>
             </div>
 

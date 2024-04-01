@@ -5,8 +5,6 @@ import { Pagination } from "swiper/modules";
 import useProducts from "../../../Components/Hooks/useProducts";
 import Container from "../../../Shared/Container/Container";
 import ProductOverviewCard from "./ProductOverviewCard";
-import Button from "../../../Shared/Html/Button";
-import { Link } from "react-router-dom";
 
 const ProductOverview = () => {
     const [products] = useProducts();
@@ -45,9 +43,6 @@ const ProductOverview = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className="flex justify-center items-center">
-                    <Link to='/collection'><Button className={"p-3 text-white font-bold"}>Go to collection</Button></Link>
-                </div>
             </Container>
         </div>
     );
