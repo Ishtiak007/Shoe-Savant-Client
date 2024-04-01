@@ -8,42 +8,52 @@ import BrandCarouselCard from "./BrandCarouselCard";
 const BrandCarousel = () => {
     const brands = [
         {
+            "_id": 1,
             "name": "Nike Done",
             "logo": "https://i.ibb.co/NybVq1D/NikeDone.jpg"
         },
         {
+            "_id": 2,
             "name": "Puma",
             "logo": "https://i.ibb.co/fq880Wj/Puma.jpg"
         },
         {
+            "_id": 3,
             "name": "Reebok",
             "logo": "https://i.ibb.co/JqtTbmH/Reebok.jpg"
         },
         {
+            "_id": 4,
             "name": "Converse",
             "logo": "https://i.ibb.co/9hxDRDP/Converse.jpg"
         },
         {
+            "_id": 5,
             "name": "Vans",
             "logo": "https://i.ibb.co/thXvjWd/Vans.jpg"
         },
         {
+            "_id": 6,
             "name": "Skechers",
             "logo": "https://i.ibb.co/fdzcb8Y/Skechers.jpg"
         },
         {
+            "_id": 7,
             "name": "Fila Done",
             "logo": "https://i.ibb.co/y0SkfJc/Fila.jpg"
         },
         {
+            "_id": 8,
             "name": "Timberland",
             "logo": "https://i.ibb.co/2yxCJks/Timberland.jpg"
         },
         {
+            "_id": 9,
             "name": "Adidas",
             "logo": "https://i.ibb.co/xGKcfv2/Adidas-Done.jpg"
         },
         {
+            "_id": 10,
             "name": "NikeDone",
             "logo": "https://i.ibb.co/NybVq1D/NikeDone.jpg"
         },
