@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
             {
                 path: '/product/:id',
                 element: <ProductDetails></ProductDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://shoe-savant-server.vercel.app/products/${params.id}`)
             },
         ]
     },
