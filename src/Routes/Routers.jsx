@@ -8,6 +8,7 @@ import Register from "../Pages/RegisterPage/Register";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Feedback from "../Pages/Feedback/Feedback";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
                 path: 'cart',
                 element: <ShoppingCart></ShoppingCart>
             },
+            {
+                path: 'feedback',
+                element: <Feedback></Feedback>
+            }
         ]
     }
 ]);

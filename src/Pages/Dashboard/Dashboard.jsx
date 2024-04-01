@@ -17,7 +17,7 @@ const Dashboard = () => {
                             </li>
 
                             <li>
-                                <NavLink to='/dashboard/review'><span className="text-white flex gap-2 items-center font-bold"><RiFeedbackLine className='text-xl'></RiFeedbackLine> Add Review</span></NavLink>
+                                <NavLink to='/dashboard/feedback'><span className="text-white flex gap-2 items-center font-bold"><RiFeedbackLine className='text-xl'></RiFeedbackLine> Add Your Feedback</span></NavLink>
                             </li>
                             <li>
                                 <NavLink to='/dashboard/paymentHistory'><span className="text-white flex gap-2 items-center font-bold"><FaDolly className='text-xl'></FaDolly> Payment History</span></NavLink>

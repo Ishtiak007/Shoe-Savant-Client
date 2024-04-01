@@ -71,7 +71,7 @@ const ShoppingCart = () => {
                                     </td>
                                     <td className="font-bold text-lg text-center">{cart.brand}</td>
                                     <td className="font-bold text-lg text-center">{cart.price}$</td>
-                                    <td className="font-bold text-lg text-center"><button onClick={() => handleDelete(cart._id)}><FaTrash className="text-red-500 text-2xl"></FaTrash></button></td>
+                                    <td className="font-bold text-lg text-center"><button onClick={() => handleDelete(cart._id)}><FaTrash className="text-red-600 text-2xl"></FaTrash></button></td>
                                 </tr>)}
                             </tbody>
                         </table>
