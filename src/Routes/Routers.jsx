@@ -30,16 +30,16 @@ export const router = createBrowserRouter([
                 element: <ProductDetails></ProductDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
             },
-            {
-                path: 'dashboard',
-                element: <Dashboard></Dashboard>,
-                children: [
-                    {
-                        path: 'cart',
-                        element: <ShoppingCart></ShoppingCart>
-                    },
-                ]
-            }
         ]
     },
+    {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'cart',
+                element: <ShoppingCart></ShoppingCart>
+            },
+        ]
+    }
 ]);

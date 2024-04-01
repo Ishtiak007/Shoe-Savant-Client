@@ -16,7 +16,6 @@ const ProductDetails = () => {
     const axiosPublic = useAxiosPublic();
     const [, refetch] = useCarts();
     const {
-        _id,
         name,
         brand,
         gender,
@@ -32,8 +31,8 @@ const ProductDetails = () => {
         if (user && user.email) {
 
             const cartItem = {
-                productId: _id,
                 email: user.email,
+                name,
                 brand,
                 price,
                 images,
