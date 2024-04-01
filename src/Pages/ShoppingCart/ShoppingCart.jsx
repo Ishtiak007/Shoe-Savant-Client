@@ -57,7 +57,7 @@ const ShoppingCart = () => {
                                     <th className="text-base text-white text-center">Image</th>
                                     <th className="text-base text-white text-center">Brand</th>
                                     <th className="text-base text-white text-center">Price$</th>
-                                    <th className="text-base text-white text-center">Cancle Order</th>
+                                    <th className="text-base text-white text-center">Cancel Order</th>
                                 </tr>
                             </thead>
                             <tbody>
