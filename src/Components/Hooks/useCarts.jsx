@@ -1,6 +1,6 @@
 import useAuth from './useAuth';
-import useAxiosPublic from './useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
+import useAxiosPublic from './useAxiosPublic';
 
 const useCarts = () => {
     const { user } = useAuth()

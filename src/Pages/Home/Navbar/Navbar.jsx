@@ -4,17 +4,17 @@ import { BsCart2 } from "react-icons/bs";
 import useAuth from "../../../Components/Hooks/useAuth";
 import toast from "react-hot-toast";
 import Button from "../../../Shared/Html/Button";
+import useCarts from "../../../Components/Hooks/useCarts";
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
-    // const [cart] = useCarts();
+    const [cart] = useCarts();
 
     const navLinks = <>
         <li><Link className='font-semibold text-white' to='/'>Home</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Colledtion</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Cart</Link></li>
+        <li><Link className='font-semibold text-white' to='/'>Collection</Link></li>
         <li><Link className='font-semibold text-white' to='/'>Checkout</Link></li>
-        <li><Link className='font-semibold text-white' to='/'>Dashboard</Link></li>
+        <li><Link className='font-semibold text-white' to='/dashboard'>Dashboard</Link></li>
         <li><Link className='font-semibold text-white' to='/login'>Login</Link></li>
 
     </>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <Link className='font-semibold text-white' to='/dashboard/cart'>
                         <button className="btn">
                             <BsCart2 className="text-2xl"></BsCart2>
-                            {/* <div className="badge badge-secondary">+ {cart.length}</div> */}
+                            <div className="badge badge-outline"><span className="text-green-600">+ {cart.length}</span></div>
                         </button>
                     </Link>
                 </div>
