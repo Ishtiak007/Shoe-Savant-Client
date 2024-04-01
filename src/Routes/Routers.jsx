@@ -9,10 +9,12 @@ import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Feedback from "../Pages/Feedback/Feedback";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
